@@ -1,0 +1,118 @@
+
+
+
+ch01_helloPython
+
+
+required packages:
+
+numpy
+matplotlib
+
+
+#########################################
+##### Affine-Activation-Softmax-Loss ####
+#########################################
+
+
+
+ch03_function p68~95
+step, sigmoid, relu, softmax
+input array X >> A = XW + B >> Y = sigmoid(A) >> use softmax to find T' in Y
+
+
+ch03_MNIST p96~106
+data: 28*28 image => 784 (10000,784)
+weight: W1(784,50) W2(50,100) W3(100,10) b1(1,50)
+
+
+ch03_batch_size p102~104
+1X784 784X50 50X100 100X10 >> 1X10
+100X784 784X50 50X100 100X10 >> 100X10
+
+
+ch04_loss_grad p112~132
+
+
+ch04_learn_with_descent p136~142
+ch04_learn_with_descent2 p143~145
+
+
+
+############################
+##### back propagation #####
+############################
+
+
+
+ch05_backpropagation_layer p160~179
+
+
+ch05_learn_with_backpropagation p184~186
+
+
+
+#############################
+##### learning strategy #####
+#############################
+
+
+
+ch06_optimizer p190~199
+
+
+ch06_compare_optimizer p200~201
+
+
+ch06_weight_initialization p202~208
+
+
+ch06_batch_norm_test p212_214
+
+
+ch06_overfit_weight_decay p215~216
+
+
+ch06_overfit_dropout p219~220 (common.trainer.py)
+
+
+ch06_Hyperparameter-Optimization_method p224~225
+lr, weight_decay searching Quiz
+
+Gradient Descent (SGD, Momentum, AdaGrad, Adam)
+Grid Search
+Random Search
+Bayesian Optimization
+Genetic Algorithm
+
+
+
+###############
+##### CNN #####
+###############
+
+
+
+(Affine-ReLU)
+(Conv-ReLU-Pooling (Pooling can be remove))
+feature map: CNN input data
+filter (FMA): p231
+Padding: 0 p232
+stride: filter shift distance p233
+3dim n data batch: (N C H W) * (FN C FH FW) = (N FN OH OW) p239
+Pooling: max, avg
+
+
+ch07_im2col p242~250
+conv, pooling
+
+
+ch07_CNN p251~253
+
+
+ch07_train_convnet p254
+
+
+ch07_visualize_filter p255
+
+
